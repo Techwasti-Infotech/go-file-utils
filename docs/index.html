@@ -330,6 +330,26 @@
           <td><code>HumanBytes(bytes) string</code></td>
           <td>Format byte counts to readable units (KB, MB, GB, TB).</td>
         </tr>
+        <tr>
+          <td><code>HeadLines(path, n) / TailLines(path, n)</code></td>
+          <td>Fast buffered reading of first/last N lines without high memory usage.</td>
+        </tr>
+        <tr>
+          <td><code>CountLines(path) (int, error)</code></td>
+          <td>High-speed byte counting of total line breaks in file.</td>
+        </tr>
+        <tr>
+          <td><code>EncryptFile / DecryptFile(src, dst, key)</code></td>
+          <td>Secure file encryption using standard AES-256-GCM authenticated cipher.</td>
+        </tr>
+        <tr>
+          <td><code>ReadJSON / WriteJSON(path, v, perm)</code></td>
+          <td>Atomic indented JSON marshal/unmarshal helpers.</td>
+        </tr>
+        <tr>
+          <td><code>ReadCSV / WriteCSV(path, records, perm)</code></td>
+          <td>Structured CSV data read and atomic persistence.</td>
+        </tr>
       </tbody>
     </table>
   </div>

@@ -22,6 +22,9 @@ A modern, high-performance, **zero-dependency** Go filesystem utility library. D
 - 🔎 **MIME & Content Detection**: Sniff MIME types via `DetectMimeType` and determine text vs binary files (`IsBinary`, `IsText`).
 - ⚡ **File Comparison & Substitution**: Byte-by-byte file comparison (`CompareFiles`) and atomic string replacement (`ReplaceInFile`).
 - ✂️ **Chunk Splitting & Joining**: Split gigabyte files into chunks (`SplitFile`) and reassemble without data loss (`JoinFiles`).
+- 📜 **Head, Tail & Line Counting**: Read top N lines (`HeadLines`), bottom N lines (`TailLines`) via reverse chunk seek, and rapid line counts (`CountLines`).
+- 🛡️ **AES-256-GCM File Encryption**: Encrypt (`EncryptFile`) and decrypt (`DecryptFile`) files using authenticated AES-GCM cryptography.
+- 📑 **Structured Data Serialization**: Atomic JSON (`ReadJSON`, `WriteJSON`) and CSV (`ReadCSV`, `WriteCSV`) persistence.
 - 📏 **Human-Readable Formatting**: Format byte values to readable units with `HumanBytes`.
 
 ---
