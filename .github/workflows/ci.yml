@@ -29,8 +29,13 @@ jobs:
     - name: Verify Dependencies
       run: go mod verify
 
-    - name: Run Tests with Coverage
-      run: go test -v -race -coverprofile=coverage.txt -covermode=atomic ./...
+    - name: Run Tests with Coverage (Linux & macOS)
+      if: runner.os != 'Windows'
+      run: go test -v -race -coverprofile="coverage.txt" -covermode=atomic ./...
+
+    - name: Run Tests with Coverage (Windows)
+      if: runner.os == 'Windows'
+      run: go test -v -coverprofile="coverage.txt" -covermode=atomic ./...
 
     - name: Code Formatting Check
       if: matrix.os == 'ubuntu-latest'
