@@ -143,9 +143,9 @@ func EmptyDir(dirPath string) error {
 
 // CopyFileOptions configures file copying behavior.
 type CopyFileOptions struct {
-	Overwrite       bool
+	Overwrite          bool
 	PreserveTimestamps bool
-	BufferSize      int
+	BufferSize         int
 }
 
 // CopyFile copies a single file from src to dst.
@@ -273,14 +273,14 @@ func Move(src, dst string) error {
 
 // FileInfo holds clean, cross-platform file metadata.
 type FileInfo struct {
-	Name        string      `json:"name"`
-	Path        string      `json:"path"`
-	Size        int64       `json:"size"`
-	Mode        os.FileMode `json:"mode"`
-	ModTime     time.Time   `json:"mod_time"`
-	IsDir       bool        `json:"is_dir"`
-	IsSymlink   bool        `json:"is_symlink"`
-	Extension   string      `json:"extension"`
+	Name      string      `json:"name"`
+	Path      string      `json:"path"`
+	Size      int64       `json:"size"`
+	Mode      os.FileMode `json:"mode"`
+	ModTime   time.Time   `json:"mod_time"`
+	IsDir     bool        `json:"is_dir"`
+	IsSymlink bool        `json:"is_symlink"`
+	Extension string      `json:"extension"`
 }
 
 // GetInfo retrieves structured metadata for a file or directory.
