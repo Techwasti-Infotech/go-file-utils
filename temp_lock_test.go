@@ -98,3 +98,4 @@ func TestTempAndLockOperations(t *testing.T) {
 		t.Errorf("WithLock failed: %v, counter: %d", err, counter)
 	}
 }
+

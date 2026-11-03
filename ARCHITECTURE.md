@@ -88,3 +88,4 @@
 ### 3.6 Scoped Temp & Concurrency Locks (`temp.go`, `lock.go`)
 - `WithTempDir` and `WithTempFile` manage temporary lifecycles reliably.
 - `FileLock` provides atomic mutual exclusion across processes or workers using `O_CREATE|O_EXCL` lock files with customizable timeouts.
+

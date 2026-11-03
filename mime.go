@@ -75,3 +75,4 @@ func IsText(path string) (bool, error) {
 	}
 	return !isBin, nil
 }
+

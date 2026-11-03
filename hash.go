@@ -73,3 +73,4 @@ func VerifyFileChecksum(path string, algo HashAlgorithm, expectedChecksum string
 	}
 	return strings.EqualFold(actual, strings.TrimSpace(expectedChecksum)), nil
 }
+

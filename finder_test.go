@@ -101,3 +101,4 @@ func TestFinder(t *testing.T) {
 		t.Errorf("Expected 5 recently created files, got %d", len(timeMatches))
 	}
 }
+

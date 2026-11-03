@@ -211,3 +211,4 @@ func JoinFiles(chunkPaths []string, dstPath string) error {
 
 	return dstFile.Sync()
 }
+
