@@ -19,6 +19,10 @@ A modern, high-performance, **zero-dependency** Go filesystem utility library. D
 - 📦 **Archive Helpers**: Simple single-call Zip and Tar.gz compression and extraction.
 - 🔐 **Cryptographic Checksums**: Streamed MD5, SHA-1, SHA-256, and SHA-512 hashes.
 - 🔒 **File Locking & Scoped Temp**: Atomic inter-process file locking (`FileLock`) and auto-cleaning temporary directories (`WithTempDir`).
+- 🔎 **MIME & Content Detection**: Sniff MIME types via `DetectMimeType` and determine text vs binary files (`IsBinary`, `IsText`).
+- ⚡ **File Comparison & Substitution**: Byte-by-byte file comparison (`CompareFiles`) and atomic string replacement (`ReplaceInFile`).
+- ✂️ **Chunk Splitting & Joining**: Split gigabyte files into chunks (`SplitFile`) and reassemble without data loss (`JoinFiles`).
+- 📏 **Human-Readable Formatting**: Format byte values to readable units with `HumanBytes`.
 
 ---
 
@@ -150,3 +154,4 @@ go test -v -race -cover ./...
 ## 📄 License
 
 This library is distributed under the terms of the MIT License. See [LICENSE](LICENSE) for details.
+

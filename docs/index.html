@@ -306,6 +306,30 @@
           <td><code>WithTempDir(prefix, fn) error</code></td>
           <td>Execute callback inside automatically cleaned temporary directory.</td>
         </tr>
+        <tr>
+          <td><code>DetectMimeType(path) (string, error)</code></td>
+          <td>Sniff MIME content type via header bytes with extension fallback.</td>
+        </tr>
+        <tr>
+          <td><code>IsBinary(path) / IsText(path)</code></td>
+          <td>Detect whether a file is UTF-8 text or raw non-printable binary.</td>
+        </tr>
+        <tr>
+          <td><code>CompareFiles(pathA, pathB) (bool, error)</code></td>
+          <td>Fast byte-by-byte equality comparison with size check shortcut.</td>
+        </tr>
+        <tr>
+          <td><code>ReplaceInFile(path, old, new) (int, error)</code></td>
+          <td>Atomic find-and-replace string substitutions across a file.</td>
+        </tr>
+        <tr>
+          <td><code>SplitFile(src, outDir, chunkSize) / JoinFiles</code></td>
+          <td>Chunk large files into equal parts and reconstruct seamlessly.</td>
+        </tr>
+        <tr>
+          <td><code>HumanBytes(bytes) string</code></td>
+          <td>Format byte counts to readable units (KB, MB, GB, TB).</td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -316,3 +340,4 @@
 
 </body>
 </html>
+
