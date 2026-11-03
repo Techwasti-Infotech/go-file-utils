@@ -1,3 +1,3 @@
 module github.com/Techwasti-Infotech/go-file-utils
 
-go 1.27.1
+go 1.20
