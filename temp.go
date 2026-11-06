@@ -82,4 +82,3 @@ func replaceAllChars(s, old, replacement string) string {
 	}
 	return s
 }
-

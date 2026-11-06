@@ -157,4 +157,3 @@ func FindByName(root, pattern string) ([]string, error) {
 		Pattern: pattern,
 	})
 }
-

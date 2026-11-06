@@ -150,4 +150,3 @@ func TestCoreFileOperations(t *testing.T) {
 		t.Errorf("RemoveIfExists on absent path failed: %v", err)
 	}
 }
-

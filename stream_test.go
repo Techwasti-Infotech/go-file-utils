@@ -86,4 +86,3 @@ func TestStreamAndAtomicOperations(t *testing.T) {
 		t.Errorf("CopyWithProgress verification failed: written=%d, lastProgress=%d", written, lastProgress)
 	}
 }
-

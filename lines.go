@@ -139,4 +139,3 @@ func CountLines(path string) (int, error) {
 	}
 	return count, nil
 }
-

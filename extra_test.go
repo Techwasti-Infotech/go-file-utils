@@ -115,4 +115,3 @@ func TestLinesCryptoStructured(t *testing.T) {
 		t.Errorf("ReadCSV failed: %+v", loadedCSV)
 	}
 }
-

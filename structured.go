@@ -53,4 +53,3 @@ func WriteCSV(path string, records [][]string, perm os.FileMode) error {
 	}
 	return f.Sync()
 }
-

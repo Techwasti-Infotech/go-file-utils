@@ -70,4 +70,3 @@ func DecryptFile(srcPath, dstPath, passphrase string) error {
 
 	return WriteFileAtomic(dstPath, plaintext, 0o644)
 }
-

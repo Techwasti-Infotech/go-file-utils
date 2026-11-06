@@ -101,4 +101,3 @@ func TestMimeAndAdvancedOperations(t *testing.T) {
 		t.Errorf("Reconstructed file does not match original source")
 	}
 }
-
