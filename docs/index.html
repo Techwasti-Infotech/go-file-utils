@@ -371,6 +371,14 @@
           <td>Recursively clean up empty directory leaves bottom-up.</td>
         </tr>
         <tr>
+          <td><code>SyncDir(src, dst, opts) (*SyncResult, error)</code></td>
+          <td>Mirror synchronize directory trees with checksum/time comparison & pruning.</td>
+        </tr>
+        <tr>
+          <td><code>WatchPath(ctx, path, interval) (&lt;-chan FileEvent, error)</code></td>
+          <td>Zero-dependency polling watcher reporting CREATED, MODIFIED, and DELETED.</td>
+        </tr>
+        <tr>
           <td><code>IsReadable / IsWritable / IsExecutable</code></td>
           <td>Instant access checks for read, write, and execute permissions.</td>
         </tr>

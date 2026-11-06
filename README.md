@@ -28,6 +28,8 @@ A modern, high-performance, **zero-dependency** Go filesystem utility library. D
 - 💽 **Disk Space & Filesystem Metrics**: Retrieve volume space (`DiskUsage`) with total, used, free, available, and percentage.
 - 🔄 **Log Rotation**: Keep files bounded with index shifting (`RotateFile`) or size thresholds (`RotateBySize`).
 - 🏷️ **Batch Operations**: Bulk regex file renaming (`BatchRename`) and recursive empty directory pruning (`PruneEmptyDirs`).
+- 📁 **Directory Synchronization**: High-performance mirror sync (`SyncDir`) with checksum-based or timestamp-based comparison, and orphan pruning (`SyncOptions.Delete`).
+- 👀 **Filesystem Watching**: Polling-based file and directory watcher (`WatchPath`) with real-time `CREATED`, `MODIFIED`, and `DELETED` change events.
 - 🔑 **Permissions & Access Checks**: Fast access checks (`IsReadable`, `IsWritable`, `IsExecutable`, `SetReadOnly`).
 - 📏 **Human-Readable Formatting**: Format byte values to readable units with `HumanBytes`.
 
