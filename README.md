@@ -25,6 +25,10 @@ A modern, high-performance, **zero-dependency** Go filesystem utility library. D
 - 📜 **Head, Tail & Line Counting**: Read top N lines (`HeadLines`), bottom N lines (`TailLines`) via reverse chunk seek, and rapid line counts (`CountLines`).
 - 🛡️ **AES-256-GCM File Encryption**: Encrypt (`EncryptFile`) and decrypt (`DecryptFile`) files using authenticated AES-GCM cryptography.
 - 📑 **Structured Data Serialization**: Atomic JSON (`ReadJSON`, `WriteJSON`) and CSV (`ReadCSV`, `WriteCSV`) persistence.
+- 💽 **Disk Space & Filesystem Metrics**: Retrieve volume space (`DiskUsage`) with total, used, free, available, and percentage.
+- 🔄 **Log Rotation**: Keep files bounded with index shifting (`RotateFile`) or size thresholds (`RotateBySize`).
+- 🏷️ **Batch Operations**: Bulk regex file renaming (`BatchRename`) and recursive empty directory pruning (`PruneEmptyDirs`).
+- 🔑 **Permissions & Access Checks**: Fast access checks (`IsReadable`, `IsWritable`, `IsExecutable`, `SetReadOnly`).
 - 📏 **Human-Readable Formatting**: Format byte values to readable units with `HumanBytes`.
 
 ---

@@ -350,6 +350,34 @@
           <td><code>ReadCSV / WriteCSV(path, records, perm)</code></td>
           <td>Structured CSV data read and atomic persistence.</td>
         </tr>
+        <tr>
+          <td><code>DiskUsage(path) (DiskStatus, error)</code></td>
+          <td>Filesystem total, used, free, and available storage metrics.</td>
+        </tr>
+        <tr>
+          <td><code>RotateFile(path, maxBackups) error</code></td>
+          <td>Shift log backups (.1, .2, ...) and rotate active file.</td>
+        </tr>
+        <tr>
+          <td><code>RotateBySize(path, maxBytes, maxBackups)</code></td>
+          <td>Conditional file rotation triggered by size threshold.</td>
+        </tr>
+        <tr>
+          <td><code>BatchRename(dir, pattern, repl)</code></td>
+          <td>Bulk regex filename replacement with capture groups.</td>
+        </tr>
+        <tr>
+          <td><code>PruneEmptyDirs(root) ([]string, error)</code></td>
+          <td>Recursively clean up empty directory leaves bottom-up.</td>
+        </tr>
+        <tr>
+          <td><code>IsReadable / IsWritable / IsExecutable</code></td>
+          <td>Instant access checks for read, write, and execute permissions.</td>
+        </tr>
+        <tr>
+          <td><code>SetReadOnly(path, readOnly bool) error</code></td>
+          <td>Toggle cross-platform file write-protection.</td>
+        </tr>
       </tbody>
     </table>
   </div>
