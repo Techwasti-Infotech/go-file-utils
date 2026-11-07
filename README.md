@@ -139,6 +139,28 @@ err := fileutils.WithLock("database.sqlite", 5*time.Second, func() error {
 
 ---
 
+## 💡 Runnable Examples & Cookbook
+
+We provide a complete suite of runnable standalone example programs inside the [`examples/`](examples/) directory:
+
+- [**01_basic_fs**](examples/01_basic_fs/main.go): Directory creation, file touch, copying with timestamps, file info.
+- [**02_atomic_and_streaming**](examples/02_atomic_and_streaming/main.go): Atomic file writes, line-by-line reading, and streaming with progress callbacks.
+- [**03_finder_and_traversal**](examples/03_finder_and_traversal/main.go): Recursive search with regex, size thresholds, and time filters.
+- [**04_archive_zip_tar**](examples/04_archive_zip_tar/main.go): Zip & Tar.gz creation and extraction with Zip Slip defense.
+- [**05_checksums_and_crypto**](examples/05_checksums_and_crypto/main.go): SHA-256, MD5, and AES-256-GCM file encryption/decryption.
+- [**06_advanced_manipulation**](examples/06_advanced_manipulation/main.go): MIME sniffing, string substitution, head/tail, and file chunk splitting/joining.
+- [**07_structured_data**](examples/07_structured_data/main.go): Atomic JSON and CSV reading and writing.
+- [**08_locks_and_rotation**](examples/08_locks_and_rotation/main.go): Process file locking, scoped temp files, and log file rotation.
+- [**09_sync_and_watch**](examples/09_sync_and_watch/main.go): Directory synchronization (with orphan pruning) and zero-dependency filesystem watcher.
+- [**10_disk_and_permissions**](examples/10_disk_and_permissions/main.go): Drive metrics (`DiskUsage`), permissions inspection, regex batch rename, and empty folder pruning.
+
+Run any example directly with:
+```bash
+go run ./examples/01_basic_fs
+```
+
+---
+
 ## 📖 API Documentation & Website
 
 Browse the interactive online documentation hosted on GitHub Pages:

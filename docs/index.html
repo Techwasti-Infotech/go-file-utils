@@ -257,6 +257,54 @@
 }
     </div>
 
+    <h2 class="section-heading">Runnable Examples & Cookbook</h2>
+    <div style="background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 3rem;">
+      <p style="color: var(--text-muted); margin-bottom: 1.25rem;">The repository contains ready-to-run interactive examples in the <code>examples/</code> directory covering every aspect of the library:</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">01 Core Filesystem</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">EnsureDir, Touch, CopyFile, GetInfo, and directory size calculations.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">02 Atomic & Streaming</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">WriteFileAtomic, AppendToFile, ReadLines, and CopyWithProgress.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">03 File Finder</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">Find files with regex, extensions, size filters, and timestamps.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">04 Zip & Tar.gz</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">Single-call archive creation and extraction with Zip Slip guards.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">05 Checksums & AES Crypto</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">Streamed SHA-256, MD5, and AES-256-GCM authenticated encryption.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">06 Advanced Processing</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">MIME sniffing, string replace, head/tail, and file chunk split/join.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">07 Structured Data</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">Atomic JSON and CSV parsing and persistence.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">08 Locks & Rotation</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">Process file locking, scoped temp files, and log file rotation.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">09 Sync & Watch</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">Mirror directory synchronization and zero-dependency filesystem watcher.</p>
+        </div>
+        <div style="background: rgba(255,255,255,0.02); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--card-border);">
+          <strong style="color: var(--primary);">10 Disk & Permissions</strong>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">Drive metrics (DiskUsage), access checks, and empty directory pruning.</p>
+        </div>
+      </div>
+      <p style="margin-top: 1.25rem; font-size: 0.9rem; color: var(--text-muted);">Run any example directly: <code>go run ./examples/01_basic_fs</code></p>
+    </div>
+
     <h2 class="section-heading" id="api-reference">Core API Reference</h2>
     <table class="api-table">
       <thead>
